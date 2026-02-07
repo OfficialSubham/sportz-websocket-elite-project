@@ -15,6 +15,6 @@ Now I know I should actually alter the data directly in sql
 
 07-02-26
 
-- Today I learned about sending query to get data from dp using drizzle
-- In zod refine is used for one check which works for boolean
+- Today I learned about sending query to get data from db using drizzle
+- In zod refine performs a single boolean check
   superRefine can take multiple custom checks with in data with specified error
