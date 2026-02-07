@@ -23,4 +23,5 @@ export const syncMatchStatus = async (match, updateStatus) => {
         await updateStatus(nextStatus);
         match.status = nextStatus;
     }
+    return match.status;
 };
