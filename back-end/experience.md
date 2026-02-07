@@ -12,3 +12,9 @@ Now I know I should actually alter the data directly in sql
 - Today I understand about the refine in zod which help us for further check
   For this project I check the start time to be lesser then the end time in refine
 - Also undertand about using iso.datetime in zod and using offset to be true for taking timezones
+
+07-02-26
+
+- Today I learned about sending query to get data from db using drizzle
+- In zod refine performs a single boolean check
+  superRefine can take multiple custom checks with in data with specified error
