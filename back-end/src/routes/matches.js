@@ -44,9 +44,12 @@ matchesRoute.post("/", async (req, res) => {
                 endTime: new Date(endTime),
             })
             .returning();
-
+        if (res.app.locals.broadcastMatchCreated) {
+            res.app.locals.broadcastMatchCreated(event);
+        }
         res.status(201).json({ data: event });
     } catch (error) {
+        console.log(error);
         res.status(500).json({ error: "Failed to create a match" });
     }
 });
