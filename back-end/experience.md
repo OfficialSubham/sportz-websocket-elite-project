@@ -18,3 +18,9 @@ Now I know I should actually alter the data directly in sql
 - Today I learned about sending query to get data from db using drizzle
 - In zod refine performs a single boolean check
   superRefine can take multiple custom checks with in data with specified error
+
+09-02-26
+-Today I learned about HOST in backend which we give after the port in the listen
+-Also I learned about making an universal response function in a backend
+It can be done by sending the response param to the function
+Another production way is making a middleware which I will implement in my future projects after practising the function way
