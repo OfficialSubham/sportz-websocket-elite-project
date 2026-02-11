@@ -29,11 +29,14 @@ export function attachWebsocketServer(server) {
     });
 
     const interval = setInterval(() => {
-        wss.clients.forEach((client) => {
-            if (client.isAlive == false) return client.terminate();
+        for (const client of wss.clients) {
+            if (client.isAlive == false) {
+                client.terminate();
+                continue;
+            }
             client.isAlive = false;
             client.ping();
-        });
+        }
     }, 30000);
 
     wss.on("close", () => clearInterval(interval));
