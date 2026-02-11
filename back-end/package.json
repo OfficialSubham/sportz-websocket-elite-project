@@ -6,7 +6,10 @@
     "scripts": {
         "dev": "node --watch ./src/index.js",
         "start": "node ./src/index.js",
-        "db:generate": "drizzle-kit generate"
+        "db:generate": "drizzle-kit generate",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:ui": "vitest --ui"
     },
     "keywords": [],
     "author": "",
@@ -21,6 +24,9 @@
         "zod": "^4.3.6"
     },
     "devDependencies": {
-        "drizzle-kit": "^0.31.8"
+        "@vitest/ui": "^4.0.18",
+        "drizzle-kit": "^0.31.8",
+        "supertest": "^7.2.2",
+        "vitest": "^4.0.18"
     }
 }
