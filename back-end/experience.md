@@ -24,3 +24,6 @@ Now I know I should actually alter the data directly in sql
 -Also I learned about making an universal response function in a backend
 It can be done by sending the response param to the function
 Another production way is making a middleware which I will implement in my future projects after practising the function way
+
+11-02-26
+-Today I learned about using ping pong in websocket and also contributed to the opensox ai for the first time and this is my second pr
