@@ -24,6 +24,7 @@ matchesRoute.get("/", async (req, res) => {
 
         res.json({ data: matchData });
     } catch (error) {
+        console.log(error);
         res.status(500).json({ error: "Failed to list match" });
     }
 });

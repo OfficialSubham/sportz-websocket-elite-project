@@ -3,6 +3,7 @@ import http from "http";
 import express from "express";
 import { matchesRoute } from "./routes/matches.js";
 import { attachWebsocketServer } from "./ws/server.js";
+import { securityMiddleware } from "./arcjet.js";
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.json({ message: "Working" });
 });
+
+app.use(securityMiddleware());
 
 app.use("/matches", matchesRoute);
 
